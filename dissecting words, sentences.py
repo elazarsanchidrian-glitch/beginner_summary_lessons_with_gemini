@@ -58,3 +58,38 @@ print(combined_list)
 #sort alphabetically
 combined_list.sort()
 print(combined_list)
+
+
+
+#input questionnaire!
+
+
+# Sort alphabetically?
+combined_list.sort()
+print("Initialized and sorted word list ready!")
+print("-" * 50)
+
+# Questionnaire loop
+while True:
+    # Get user input and convert to lowercase for case-insensitivity
+    user_query = input("\nEnter a letter or series of letters to search (or type 'exit' to quit): ").strip().lower()
+
+    if user_query == 'exit':
+        print("Goodbye!")
+        break
+
+    if not user_query:
+        print("Please enter at least one character.")
+        continue
+
+    # Check which words contain the user's input as a substring
+    matching_words = [word for word in combined_list if user_query in word]
+
+    # Print the results
+    if matching_words:
+        print(f"\n✅ Yes! '{user_query}' is found in the combined list.")
+        print("Found in the following word(s):")
+        for word in matching_words:
+            print(f"  • {word}")
+    else:
+        print(f"\n❌ No, '{user_query}' is not found in any of the words.")
