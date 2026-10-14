@@ -19,9 +19,42 @@ for letter in letters:
 #prints horizontally each letter in the word with a space in between
 
 
-
 for index, letter in enumerate(word, start=1):
     print(f"{index}: {letter}")
 #prints the index and letter in the word, starting from 1, print every single letter in a clean, numbered vertical list
 
 
+word = "pneumonoultramicroscopicsilicovolcanoconiosis"
+
+# Convert the word into a list of characters and sort them alphabetically
+sorted_letters = sorted(list(word))
+
+print(sorted_letters)
+
+
+
+# Convert to a set to remove duplicates, then sort alphabetically back into a list
+unique_letters = sorted(list(set(word)))
+
+print(unique_letters)
+
+
+
+#now let's add a second word to the mix
+word1 = "pneumonoultramicroscopicsilicovolcanoconiosis"
+word2 = "hippopotomonstrosesquipedaliophobia"
+
+#put them in a new list together
+combined_list = [word1, word2]
+
+print(combined_list)
+
+#third word is going to be appended to the list
+word3 = "floccinaucinihilipilification"
+combined_list.append(word3)
+
+print(combined_list)
+
+#sort alphabetically
+combined_list.sort()
+print(combined_list)
