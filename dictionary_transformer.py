@@ -1,4 +1,5 @@
 import json
+import sqlite3  # 1. Add the sqlite3 import at the top
 import pandas as pd
 
 # 1. The Core Data: A list of dictionaries (looks just like JSON or rows)
@@ -46,3 +47,19 @@ with open("from_dictionary.json", "w") as json_file:
     json.dump(users_data, json_file, indent=4)
 
 print("Successfully transformed dictionary into a JSON file!")
+
+
+# ==========================================
+# TRANSFORMATION 4: Export to a CSV file
+# ==========================================
+df.to_csv("from_dictionary.csv", index=False)
+print("Successfully transformed dictionary into a CSV file!")
+
+
+# ==========================================
+# TRANSFORMATION 5: Export to a SQLite database
+# ==========================================
+conn = sqlite3.connect("from_dictionary.db")
+df.to_sql("users", conn, if_exists="replace", index=False)
+conn.close()
+print("Successfully transformed dictionary into a SQLite database!")
