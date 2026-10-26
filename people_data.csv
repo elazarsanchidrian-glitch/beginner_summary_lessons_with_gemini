@@ -1,0 +1,6 @@
+id,name,dob,email,phone
+1,John,1990-01-15,john@example.com,555-0101
+2,Alice,1985-07-30,alice@example.com,555-0102
+3,Bob,1992-03-22,bob@example.com,555-0103
+4,Eve,1988-11-05,eve@example.com,555-0104
+5,Charlie,1995-06-12,charlie@example.com,555-0105
