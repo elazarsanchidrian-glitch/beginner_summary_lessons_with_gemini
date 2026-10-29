@@ -28,5 +28,11 @@
         "email": "charlie@example.com",
         "phone": "555-0105",
         "id": "5"
+    },
+    "Sarah": {
+        "dob": "1998-04-20",
+        "email": "sarah@example.com",
+        "phone": "555-0106",
+        "id": "6"
     }
 }
