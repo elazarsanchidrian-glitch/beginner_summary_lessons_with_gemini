@@ -1,0 +1,16 @@
+data = [
+    {
+        "id": 1,
+        "first_name": "Sam",
+        "last_name": "Wilson",
+        "email": "sam.wilson@example.com",
+        "status": "Active"
+    },
+    {
+        "id": 2,
+        "first_name": "Elazar",
+        "last_name": "Sanchidrian",
+        "email": "elazar.sanchidrian@example.com",
+        "status": "Active"
+    }
+]
