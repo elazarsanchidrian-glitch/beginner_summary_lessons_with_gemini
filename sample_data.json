@@ -1,0 +1,26 @@
+{
+    "project": "Random JSON Generator",
+    "version": "1.0.0",
+    "active": true,
+    "max_users": 500,
+    "settings": {
+        "theme": "dark",
+        "notifications": {
+            "email": true,
+            "push": false,
+            "frequency": "daily"
+        },
+        "retries": 3,
+        "timeout_seconds": 4.5
+    },
+    "tags": [
+        "demo",
+        "json",
+        "sample",
+        "metadata"
+    ],
+    "metrics": {
+        "uptime": 99.98,
+        "error_rate": 0.002
+    }
+}
