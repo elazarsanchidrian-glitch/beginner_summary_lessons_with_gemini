@@ -19,6 +19,22 @@ print(with_parentheses)
 exponent = 2 ** 3
 print(exponent)
 
+#exponent equations
+exponent_equation = 2 ** 3 + 5 * 2
+print(exponent_equation)
+
+#with parentheses exponent equations
+exponent_equation_with_parentheses = (2 ** 3) + (5 * 2)
+print(exponent_equation_with_parentheses)
+
+# Without parentheses: exponent applies only to 2
+without_parentheses_exponent = 2**3 + 5  # (2 ** 3) + 5 = 8 + 5 = 13
+print(without_parentheses_exponent)
+
+# With parentheses: addition happens before the exponent
+with_parentheses_exponent = 2 ** (3 + 5)  # 2 ** 8 = 256
+print(with_parentheses_exponent)
+
 #fractions adding plus
 fraction_calculation = (1/2) + (1/2)
 print(fraction_calculation)
